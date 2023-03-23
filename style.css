@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Inter', sans-serif;
+    --color-text: #172b4d;
+    --color-new: #36b37e;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.nav-bar img {
+    height: 20px;
+}
+
+.headline-container {
+  background-image: url('./assets/header-illsutration-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 2.5px;
+  top: 92.8px;
+}
+

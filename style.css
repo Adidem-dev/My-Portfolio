@@ -3,12 +3,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  width: 100%;
 }
 
 :root {
@@ -36,15 +35,12 @@ body {
   background-size: cover;
   height: 100%;
   width: 100%;
-  position: absolute;
-  left: 2.5px;
-  top: 92.8px;
 }
 
 .header-page {
   text-align: center;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 92px;
   width: 100%;
 }
 
@@ -94,3 +90,174 @@ body {
   text-align: center;
   margin-top: 24px;
 }
+/* main section begins */
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+.works-section-title {
+  text-align: center;
+  font-size: 40px;
+  color: #172B4D;
+}
+
+.works-grid-container {
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+  margin: 62px auto;
+}
+
+.card img {
+  width: 327px;
+  max-width: 100%;
+  height: 252px;
+}
+
+.card {
+  width: 100%;
+  border: 1px solid #D0D9D4;
+  border-radius: 8px;
+}
+
+.card-details {
+  align-items: center;
+  gap: 12px;
+  color: #172B4d;
+}
+
+.card-details h2 {
+  margin-top: 16px;
+}
+
+.list {
+  gap: 8px;
+}
+
+.list li {
+  background: #ebf0ee;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.skills li {
+  background: #fff;
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.card-details button {
+  margin: 15px 102px 24px 103px;
+  padding: 12px;
+  background-color:#36b37f;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.about-me {
+  background-image: url(./Icons/about-top.svg), url(./Icons/about_bg.svg);
+  background-repeat: no-repeat;
+  background-position: right -40px, 0 270px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+.about-me button {
+margin: 15px 102px 24px 103px;
+padding: 8px;
+background-color:#36b37f;
+border: none;
+border-radius: 4px;
+color: #ffffff;
+font-weight: 500;
+font-size: 15px;
+line-height: 24px;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  background: #36B37F;
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button:active {
+  background: #008552;
+}
+
+.about-me h2 {
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+color: #172b4d;
+}
+
+.about-me p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 20px 15px 0px 15px;
+  color: #42526e;
+}
+
+.about-me-container {
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+  margin: 62px auto;
+}
+.about-me-item {
+  background: #EBF0EE;
+  border: 1px solid #C1C7D0;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  text-align: center;
+  height: 316px;
+}
+
+.about-me-item h3 {
+  color: #172B4d;
+}
+
+.about-me-item ul {
+  color:  #36b37e;
+}
+
+.iconic {
+  background-color: #fff;
+  padding: 18px;
+  border-radius: 50%;
+  margin-top: 40px;
+  box-shadow: 0px 16px 24px rgba(37, 47, 137, 0.08);
+}
+
+.skills {
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 285px;
+}
+

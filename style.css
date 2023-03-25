@@ -178,7 +178,7 @@ button {
 }
 
 .about-me {
-  background-image: url(./Icons/about-top.svg), url(./Icons/about_bg.svg);
+  background-image: url(./assets/about-top.svg), url(./assets/about_bg.svg);
   background-repeat: no-repeat;
   background-position: right -40px, 0 270px;
   flex-direction: column;

@@ -133,14 +133,14 @@ ul {
 }
 
 .works-section-title h2 {
-  font-family: 'Inter';
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #172B4D;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
 }
 
 .works-grid-container {

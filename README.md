@@ -86,6 +86,9 @@ After you're finished please remove all the comments and instructions!
 - **[Add the navbar menu icon]**
 - **[Add the headline section]**
 - **[CSS styling]**
+- **[Add the work section]**
+- **[Add the about me section]**
+- **[Add the second CSS styling]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

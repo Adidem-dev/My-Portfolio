@@ -119,11 +119,28 @@ ul {
   flex-direction: column;
 }
 
+.main-section {
+  margin-top: 15%;
+}
+
 .works-section-title {
   font-family: var(--font-family);
   text-align: center;
   font-size: 40px;
   color: #172b4d;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.works-section-title h2 {
+  font-family: 'Inter';
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #172B4D;
 }
 
 .works-grid-container {
@@ -155,6 +172,8 @@ ul {
 
 .card-details h2 {
   margin-top: 16px;
+  text-align: center;
+  line-height: 42px;
 }
 
 .list {
@@ -231,6 +250,10 @@ button:active {
   justify-content: center;
   width: 100%;
   margin: 62px auto;
+}
+
+.about-card {
+  margin: 24px 0;
 }
 
 .about-me-item {

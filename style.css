@@ -290,3 +290,12 @@ button:active {
   justify-content: center;
   max-width: 285px;
 }
+
+.contact-section{
+  background: url(./assets/illustration-contact-form.svg);
+  background-repeat: no repeat;
+}
+
+
+
+

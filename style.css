@@ -8,6 +8,7 @@
 
 body {
   width: 100%;
+  
 }
 
 :root {
@@ -291,10 +292,87 @@ button:active {
   max-width: 285px;
 }
 
-.contact-section{
+.background{
   background: url(./assets/illustration-contact-form.svg);
-  background-repeat: no repeat;
+  background-repeat:no-repeat;
+  background-position: bottom right 5px, 0 270px;
 }
+
+.contact-section{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contact-me{
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.contact-me p{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 32rem;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input[type="text"],input[type="email"],textarea{
+  border: 0.5px solid #d0d9d4;;
+  border-radius: 0.3rem;
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: 400px;
+  font-size: 15px;
+  padding: 0.8rem 0.7rem;
+  color: #6b778c;
+}
+
+textarea{
+  height: 11rem;
+}
+
+textarea::placeholder{
+  font-family: var(--font-family);
+  font-size: 12px;
+  color: #6b778c;
+}
+
+button[type="submit"]{
+  display: flex;
+  align-items: center;
+  align-self: center;
+  background: #36b37f;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+
+  
+}
+
 
 
 

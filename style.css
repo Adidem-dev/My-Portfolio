@@ -57,6 +57,15 @@ body {
   color: var(--color-new);
 }
 
+footer p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #42526e;
+  margin-top: 2rem;
+}
+
 .header-page p {
   font-family: var(--font-family);
   font-weight: 400;
@@ -323,6 +332,7 @@ button:active {
   align-items: center;
   margin-top: 4rem;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -371,13 +381,4 @@ button[type="submit"] {
   font-weight: 500;
   color: #fff;
   border: none;
-}
-
-footer p {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  color: #42526e;
-  margin-top: 2rem;
 }

@@ -314,6 +314,7 @@ button:active {
   font-size: 30px;
   line-height: 42px;
   text-align: center;
+  color: #172b4d;
 }
 
 .form{
@@ -372,6 +373,17 @@ button[type="submit"]{
 
   
 }
+
+footer p{
+  font-family:  var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #42526e;
+  margin-top: 2rem;
+}
+
+
 
 
 

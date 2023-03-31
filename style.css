@@ -446,6 +446,10 @@ button[type="submit"] {
     color: var(--color-text);
   }
 
+  footer p {
+    display: none;
+  }
+
   .header-page p {
     width: 90%;
     font-family: var(--font-family);
@@ -479,7 +483,6 @@ button[type="submit"] {
   .about-me {
     background-image: url(./assets/about-me-1.svg);
     background-repeat: no-repeat;
-    background-position: left -50x, 0 200px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -546,7 +549,7 @@ button[type="submit"] {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 55%;
   }
@@ -559,12 +562,10 @@ button[type="submit"] {
     margin-top: 5%;
   }
 
-  footer p {
-    display: none;
-  }
-
   .background {
-    background: url(./assets/contact-2.svg), url(./assets/contact-1.svg),
+    background:
+      url(./assets/contact-2.svg),
+      url(./assets/contact-1.svg),
       url(./assets/contact-3.svg);
     background-repeat: no-repeat;
     background-position: left bottom, 25% 80%, right bottom;

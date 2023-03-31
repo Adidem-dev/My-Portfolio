@@ -25,7 +25,7 @@ body {
   margin: 20px auto;
 }
 
-.nav-bar_desktop{
+.nav-bar_desktop {
   display: none;
 }
 
@@ -429,7 +429,7 @@ button[type="submit"] {
   }
 
   .desktop-bg {
-    background-image: url('./assets/desktop-bg.svg');
+    background-image: url("./assets/desktop-bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -471,7 +471,7 @@ button[type="submit"] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .card img {
     width: 100%;
   }
@@ -498,7 +498,7 @@ button[type="submit"] {
 
   .about-me-container ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);                       
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     padding-bottom: 20px;
     justify-content: center;
@@ -511,11 +511,12 @@ button[type="submit"] {
     margin: 0;
   }
 
-  .about-card, .about-card ul {
+  .about-card,
+  .about-card ul {
     margin: 0 20px;
     padding: 0 20px;
   }
-  
+
   .contact-section {
     display: flex;
     flex-direction: row;
@@ -563,23 +564,24 @@ button[type="submit"] {
   }
 
   .background {
-  background: url(./assets/contact-2.svg), url(./assets/contact-1.svg), url(./assets/contact-3.svg);
-  background-repeat: no-repeat;
-  background-position: left bottom, 25% 80%, right bottom;
-}
+    background: url(./assets/contact-2.svg), url(./assets/contact-1.svg),
+      url(./assets/contact-3.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom, 25% 80%, right bottom;
+  }
 
-.about-me-img {
-  position: absolute;
-left: -1.67%;
-margin-top: 70px;
-display: block;
-}
+  .about-me-img {
+    position: absolute;
+    left: -1.67%;
+    margin-top: 70px;
+    display: block;
+  }
 
-.contact-desk-bg {
-  position: absolute;
-  left: 274px;
-  top: 3220.17px;
-  display: block;
-  z-index: -1;
-}
+  .contact-desk-bg {
+    position: absolute;
+    left: 274px;
+    top: 3220.17px;
+    display: block;
+    z-index: -1;
+  }
 }

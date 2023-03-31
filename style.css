@@ -219,6 +219,10 @@ button {
   text-align: center;
 }
 
+.about-me-img {
+  display: none;
+}
+
 .about-me button {
   margin: 15px 102px 24px 103px;
   padding: 8px;
@@ -473,9 +477,9 @@ button[type="submit"] {
   }
 
   .about-me {
-    background-image: url(./assets/about-me-1.svg), url(./assets/about-me-2.svg);
+    background-image: url(./assets/about-me-1.svg);
     background-repeat: no-repeat;
-    background-position: right -50x, 0 140px;
+    background-position: left -50x, 0 200px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -559,9 +563,16 @@ button[type="submit"] {
   }
 
   .background {
-  background: url(./assets/contact-2.svg), url(./assets/contact-3.svg);
+  background: url(./assets/contact-2.svg), url(./assets/contact-1.svg), url(./assets/contact-3.svg);
   background-repeat: no-repeat;
-  background-position: left bottom, right bottom;
+  background-position: left bottom, 25% 80%, right bottom;
+}
+
+.about-me-img {
+  position: absolute;
+left: -1.67%;
+margin-top: 70px;
+display: block;
 }
 
 .contact-desk-bg {

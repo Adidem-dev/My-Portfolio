@@ -25,6 +25,10 @@ body {
   margin: 20px auto;
 }
 
+.nav-bar_desktop {
+  display: none;
+}
+
 .nav-bar img {
   height: 20px;
 }
@@ -215,6 +219,10 @@ button {
   text-align: center;
 }
 
+.about-me-img {
+  display: none;
+}
+
 .about-me button {
   margin: 15px 102px 24px 103px;
   padding: 8px;
@@ -311,11 +319,6 @@ button:active {
   margin: 0 auto;
 }
 
-.contact-me {
-  max-width: 32rem;
-  margin: 0 auto;
-}
-
 .contact-me p {
   font-family: var(--font-family);
   font-weight: 700;
@@ -344,6 +347,10 @@ form {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+.contact-desk-bg {
+  display: none;
 }
 
 input[type="text"],
@@ -381,4 +388,201 @@ button[type="submit"] {
   font-weight: 500;
   color: #fff;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-bar_desktop {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-bar_desktop ul {
+    display: flex;
+  }
+
+  .nav-bar_desktop ul li {
+    list-style: none;
+    padding: 15px 20px;
+    margin: 20px;
+  }
+
+  .nav-bar_desktop ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .headline-container {
+    background-image: none;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+    margin: 30px auto;
+  }
+
+  .desktop-bg {
+    background-image: url("./assets/desktop-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .header-page h1 {
+    font-family: var(--font-family);
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+    font-weight: 800;
+    color: var(--color-text);
+  }
+
+  footer p {
+    display: none;
+  }
+
+  .header-page p {
+    width: 90%;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--color-text);
+    margin: 0 auto;
+  }
+
+  .works-section-title h2 {
+    display: block;
+  }
+
+  .works-section-title img {
+    display: none;
+  }
+
+  .works-grid-container {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .about-me {
+    background-image: url(./assets/about-me-1.svg);
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  .about-me p {
+    width: 57%;
+  }
+
+  .about-me-container {
+    width: 80%;
+    margin: 8% auto 1% auto;
+  }
+
+  .about-me-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  .about-me-item ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .about-card,
+  .about-card ul {
+    margin: 0 20px;
+    padding: 0 20px;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 10px auto 15% auto;
+    padding: 0;
+  }
+
+  .contact-me {
+    text-align: start;
+    align-self: center;
+    justify-content: center;
+    width: 45%;
+  }
+
+  .contact-me p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    gap: 24px;
+    width: 55%;
+  }
+
+  .form button {
+    align-self: flex-start;
+  }
+
+  footer {
+    margin-top: 5%;
+  }
+
+  .background {
+    background:
+      url(./assets/contact-2.svg),
+      url(./assets/contact-1.svg),
+      url(./assets/contact-3.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom, 25% 80%, right bottom;
+  }
+
+  .about-me-img {
+    position: absolute;
+    left: -1.67%;
+    margin-top: 70px;
+    display: block;
+  }
+
+  .contact-desk-bg {
+    position: absolute;
+    left: 274px;
+    top: 3220.17px;
+    display: block;
+    z-index: -1;
+  }
 }

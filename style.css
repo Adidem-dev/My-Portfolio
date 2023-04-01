@@ -57,6 +57,8 @@ body {
   color: var(--color-text);
 }
 
+
+
 .header-page h1 > span {
   color: var(--color-new);
 }
@@ -585,4 +587,81 @@ button[type="submit"] {
     display: block;
     z-index: -1;
   }
+
+  .header-page h1 {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--color-text);
+  position: relative;
+  animation: heading;
+  animation-duration: 3s;
 }
+
+@keyframes heading {
+  0% {top: -400px;}
+  100% {top: 10px;}
+}
+
+.header-page p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--color-text);
+  margin: 20px;
+  position: relative;
+  animation: paragraph;
+  animation-duration: 3s;
+}
+
+@keyframes paragraph {
+  0% {left: 1000px;}
+  100% {left: 0;}
+}
+
+.contact-me p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    position: relative;
+    animation: contact;
+    animation-duration: 3s;
+  }
+
+  @keyframes contact {
+    0% {right: 1000px}
+    100% {right: 0;}
+  }
+
+  input[type="text"],
+input[type="email"],
+textarea {
+  border: 0.5px solid #d0d9d4;
+  border-radius: 0.3rem;
+  font-family: var(--font-family);
+  font-style: italic;
+  font-weight: 400px;
+  font-size: 15px;
+  padding: 0.8rem 0.7rem;
+  color: #6b778c;
+  position: relative;
+  animation: form;
+  animation-duration: 3s;
+}
+
+@keyframes form {
+  0% {left: 1000px;}
+  100% {left: 0;}
+}
+
+}
+  
+

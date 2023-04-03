@@ -95,7 +95,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="https://adidem-dev.github.io/My-Portfolio/"></a>
 
 - Not Available
 

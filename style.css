@@ -42,7 +42,7 @@ body {
 }
 
 #menu-option {
-  background-color: #3C3A39;
+  background-color: #fff;
   display: none;
   height: 753px;
 }
@@ -64,13 +64,11 @@ body {
 }
 
 #menu-list li {
-  border-bottom: 1px solid #6F6C6B;
   margin: 20px;
 }
 
 #menu-list a {
-  color: #FFF5E1;
-  text-decoration: none;
+  color:#3a4a42;
 }
 
 .header-page {

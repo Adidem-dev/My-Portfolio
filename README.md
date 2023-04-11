@@ -72,7 +72,8 @@ After you're finished please remove all the comments and instructions!
   <summary>Client</summary>
   <ul>
     <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS/a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JAVASCRIPT</a></li>
   </ul>
 </details>
 
@@ -89,6 +90,7 @@ After you're finished please remove all the comments and instructions!
 - **[Add the work section]**
 - **[Add the about me section]**
 - **[Add the second CSS styling]**
+- **[Add the Javscript DOM manipulation]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -146,6 +148,8 @@ To run tests, run the following command:
 `npm install --save-dev hint@7.x`
 
 `npx stylelint "**/*.{css,scss}"`
+
+`npx eslint .`
 
 ### Deployment
 

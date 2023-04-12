@@ -1,27 +1,18 @@
-const btnMenu = document.getElementById('hamburger');
-const xBtn = document.getElementById('x-mark');
+const button = document.querySelector('.hamburger');
+const element = document.querySelector('.nav-bar_desktop');
+const list = document.querySelectorAll('.nav-bar_desktop a, .nav-bar_desktop img');
+const overlay = document.querySelector('.overlay');
 
-function myFunction() {
-  const element = document.querySelector('.header-nav');
-  const list = document.getElementById('menu-option');
-  element.style.display = 'none';
-  list.style.display = 'block';
-}
-
-function closing() {
-  const element = document.querySelector('.header-nav');
-  const list = document.getElementById('menu-option');
+button.addEventListener('click', () => {
   element.style.display = 'flex';
-  list.style.display = 'none';
+  button.style.display = 'none';
+  overlay.classList.remove('hidden');
+});
+
+for (let i = 0; i < list.length; i++) {
+  list[i].addEventListener('click', () => {
+    element.style.display = 'none';
+    button.style.display = 'block';
+    overlay.classList.add('hidden');
+  })
 }
-
-btnMenu.addEventListener('click', myFunction);
-xBtn.addEventListener('click', closing);
-
-const btn1 = document.getElementById('about-link');
-const btn2 = document.getElementById('contact-link');
-const btn3 = document.getElementById('port');
-
-btn1.addEventListener('click', closing);
-btn2.addEventListener('click', closing);
-btn3.addEventListener('click', closing);

@@ -25,8 +25,68 @@ body {
   margin: 20px auto;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e7e1e1;
+  z-index: -1;
+}
+
+#menu-option {
+  z-index: 10;
+}
 .nav-bar_desktop {
   display: none;
+  /* position: absolute; */
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  background-color: #fff;
+  /* z-index: 10; */
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-bar_desktop ul {
+  list-style: none;
+  color:#3a4a42;
+  padding-left: 24px;
+  padding-top: 24px;
+}
+
+.nav-bar_desktop li {
+  margin-bottom: 25px;
+}
+
+.close {
+  margin-top: 20px;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+.x-mark {
+  height: 15px;
+  width: 15px;
+  color:#3a4a42;
+  z-index: 10;
+}
+
+.nav-bar_desktop a {
+  text-decoration: none;
+  color:#3a4a42;
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  z-index: 10;
 }
 
 .nav-bar img {
@@ -39,33 +99,6 @@ body {
   background-size: cover;
   height: 100%;
   width: 100%;
-}
-
-#menu-option {
-  background-color: #fff;
-  display: none;
-  height: 753px;
-}
-
-#x-mark {
-  top: 25px;
-  position: absolute;
-  right: 25px;
-}
-
-#menu-list {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  list-style-type: none;
-  padding: 50px 25px;
-}
-
-#menu-list a {
-  color: #3a4a42;
-  text-decoration: none;
 }
 
 .header-page {
@@ -145,9 +178,6 @@ ul {
   padding: 5px;
 }
 
-#menu-list li {
-  margin: 20px;
-}
 
 .bottom-icon {
   align-items: center;
@@ -421,8 +451,15 @@ button[type="submit"] {
   border: none;
 }
 
+
+/* MEDIA QUERY */
+
 @media screen and (min-width: 768px) {
   .nav-bar {
+    display: none;
+  }
+
+  .close {
     display: none;
   }
 
@@ -431,7 +468,9 @@ button[type="submit"] {
     text-align: center;
     width: 100%;
     justify-content: center;
+    position: fixed;
   }
+
 
   .nav-bar_desktop ul {
     display: flex;

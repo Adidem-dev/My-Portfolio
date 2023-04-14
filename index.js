@@ -14,5 +14,8 @@ for (let i = 0; i < list.length; i++) {
     element.style.display = 'none';
     button.style.display = 'block';
     overlay.classList.add('hidden');
-  })
+  });
 }
+
+const email = document.getElementById('mail');
+const form = document.getElementById('form1');

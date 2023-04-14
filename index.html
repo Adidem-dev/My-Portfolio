@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/51f27b15da.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/51f27b15da.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
@@ -15,10 +18,10 @@
         <nav class="nav-bar">
           <img class="hamburger" src="./assets/Union.svg" alt="hambuger icon" />
         </nav>
-        
-        <nav  id="menu-option" class="nav-bar_desktop">
+
+        <nav id="menu-option" class="nav-bar_desktop">
           <div class="close">
-            <img src="./assets/close.svg" alt="close-icon" class="x-mark">
+            <img src="./assets/close.svg" alt="close-icon" class="x-mark" />
           </div>
           <div class="overlay"></div>
           <div>
@@ -33,8 +36,8 @@
           </div>
         </nav>
       </header>
-      
-     <!-- <div id="menu-option">
+
+      <!-- <div id="menu-option">
      <i id="x-mark" class="fa-solid fa-x"></i>
        <ul id="menu-list">
             <li><a id="port" href="#recent">Portfolio</a></li>
@@ -268,7 +271,7 @@
         </div>
 
         <div class="form">
-          <form action="https://formspree.io/f/mrgvybre" method="POST">
+          <form action="https://formspree.io/f/mrgvybre" method="POST" id="form1" name="fEmail">
             <div class="contact">
               <input
                 type="text"
@@ -298,8 +301,11 @@
                 placeholder="Hey i'd like to connect to..."
                 required
               ></textarea>
+              <!-- <label for="textarea" id="lower" style="color: red;visibility:hidden">Not sent</label> -->
             </div>
-            <button type="submit">Get in touch</button>
+            <button type="submit" id="click">Get in touch</button>
+            <p id="error"></p>
+            
           </form>
         </div>
       </div>

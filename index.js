@@ -9,7 +9,7 @@ button.addEventListener('click', () => {
   overlay.classList.remove('hidden');
 });
 
-for (let i = 0; i < list.length; i++) {
+for (let i = 0; i < list.length; i += 1) {
   list[i].addEventListener('click', () => {
     element.style.display = 'none';
     button.style.display = 'block';
@@ -20,8 +20,8 @@ for (let i = 0; i < list.length; i++) {
 const email = document.getElementById('mail');
 const form = document.getElementById('form1');
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault()
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
   if (email.value !== email.value.toLowerCase()) {
     document.getElementById('error').innerText = 'Error, Email must be lowercase. Form is not sent';
   } else {

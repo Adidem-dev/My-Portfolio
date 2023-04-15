@@ -738,11 +738,11 @@ button[type="submit"] {
 
 @media screen and (max-width: 767px) {
   .x-mark {
-    display: none;
+    display: block;
     z-index: 20;
   }
   .nav-bar-mobile {
-    display: none;
+    display: block;
     position: absolute;
     top: 5rem;
     left: 4rem;

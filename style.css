@@ -451,9 +451,6 @@ button[type="submit"] {
   border: none;
 }
 
-
-/* DESKTOP MEDIA QUERY */
-
 @media screen and (min-width: 768px) {
   .nav-bar {
     display: none;

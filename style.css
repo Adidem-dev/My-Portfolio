@@ -31,12 +31,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
-  z-index: 1
+  background-color: #fff;
+  z-index: 1;
 }
+
 /* #menu-option {
   z-index: 10;
 } */
+
 /* .nav-bar_desktop {
   display: none;
   position: absolute;
@@ -176,7 +178,6 @@ ul {
   margin: 10px 5px;
   padding: 5px;
 }
-
 
 .bottom-icon {
   align-items: center;
@@ -471,7 +472,6 @@ button[type="submit"] {
     font-size: 18px;
   }
 
-
   .nav-bar_desktop ul {
     display: flex;
   }
@@ -738,6 +738,7 @@ button[type="submit"] {
     display: none;
     z-index: 20;
   }
+
   .nav-bar-mobile {
     display: none;
     position: absolute;
@@ -745,11 +746,12 @@ button[type="submit"] {
     left: 4rem;
     flex-direction: column;
     gap: 50px;
-    font-family: var(--font-family);;
+    font-family: var(--font-family);
     font-size: 32px;
     font-weight: 600;
     z-index: 999;
   }
+
   .nav-bar-mobile a {
     color: #344563;
     text-decoration: none;

@@ -1,5 +1,5 @@
 const button = document.querySelector('.hamburger');
-//const element = document.querySelector('.nav-bar-mobile');
+// const element = document.querySelector('.nav-bar-mobile');
 const close = document.querySelector('.x-mark');
 const menuList = document.querySelector('.nav-bar-mobile');
 const list = document.querySelectorAll('.nav-bar-mobile a');
@@ -16,19 +16,19 @@ button.addEventListener('click', () => {
 
 const quit = () => {
   menuList.style.display = 'none';
-    button.style.display = 'block';
-    close.style.display = 'none';
-    overlay.classList.add('hidden');
-    body.style.overflow = 'scroll';
-}
-  close.addEventListener('click', () => {
-    quit();
-  })
+  button.style.display = 'block';
+  close.style.display = 'none';
+  overlay.classList.add('hidden');
+  body.style.overflow = 'scroll';
+};
+close.addEventListener('click', () => {
+  quit();
+});
 
 if (window.innerWidth < 767) {
   list.forEach((item) => {
     item.addEventListener('click', () => {
-    quit ();
+      quit();
     });
   });
 }

@@ -668,8 +668,13 @@ button[type="submit"] {
   }
 
   @keyframes heading {
-    0% { top: -400px; }
-    100% { top: 10px; }
+    0% {
+      top: -400px;
+    }
+
+    100% {
+      top: 10px;
+    }
   }
 
   .header-page .animate {
@@ -686,8 +691,13 @@ button[type="submit"] {
   }
 
   @keyframes paragraph {
-    0% { left: 1000px; }
-    100% { left: 0; }
+    0% {
+      left: 1000px;
+    }
+
+    100% {
+      left: 0;
+    }
   }
 
   .contact-me .touch {
@@ -704,8 +714,13 @@ button[type="submit"] {
   }
 
   @keyframes contact {
-    0% { right: 1000px; }
-    100% { right: 0; }
+    0% {
+      right: 1000px;
+    }
+
+    100% {
+      right: 0;
+    }
   }
 
   input[type="text"],
@@ -725,8 +740,13 @@ button[type="submit"] {
   }
 
   @keyframes form {
-    0% { left: 1000px; }
-    100% { left: 0; }
+    0% {
+      left: 1000px;
+    }
+
+    100% {
+      left: 0;
+    }
   }
 }
 

@@ -13,38 +13,25 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="desktop-bg">
+
       <header class="header-nav">
         <nav class="nav-bar">
           <img class="hamburger" src="./assets/Union.svg" alt="hambuger icon" />
+          <img src="./assets/close.svg" alt="close-icon" class="x-mark">
         </nav>
-
-        <nav id="menu-option" class="nav-bar_desktop">
-          <div class="close">
-            <img src="./assets/close.svg" alt="close-icon" class="x-mark" />
-          </div>
-          <div class="overlay"></div>
-          <div>
-            <ul>
-              <li><a href="#recent">Portfolio</a></li>
-              <span class="line"></span>
-              <li><a href="#about-div">About</a></li>
-              <span class="line"></span>
-              <li><a href="#contact-block">Contact</a></li>
-              <span class="line"></span>
-            </ul>
-          </div>
+        <div class="overlay hidden"></div>
+        
+        <nav class="nav-bar_desktop">
+          <ul class=" nav-bar-mobile ">
+            <li><a href="#recent">Portfolio</a></li>
+            <li><a href="#about-div">About</a></li>
+            <li><a href="#contact-block">Contact</a></li>
+          </ul>    
         </nav>
+        
       </header>
 
-      <!-- <div id="menu-option">
-     <i id="x-mark" class="fa-solid fa-x"></i>
-       <ul id="menu-list">
-            <li><a id="port" href="#recent">Portfolio</a></li>
-            <li><a id="about-link" href="#about-div">About</a></li>
-            <li><a id="contact-link" href="#contact-block">Contact</a></li>
-        </ul>
-    </div> -->
+    <section class="desktop-bg"> 
       <section class="headline-container">
         <div class="header-page">
           <h1 class="animate-head">
@@ -344,6 +331,7 @@
         </div>
       </footer>
     </section>
+    
     <script src="index.js"></script>
   </body>
 </html>

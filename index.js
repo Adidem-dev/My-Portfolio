@@ -1,5 +1,3 @@
-/* Menu Option Section */
-
 const button = document.querySelector('.hamburger');
 // const element = document.querySelector('.nav-bar-mobile');
 const close = document.querySelector('.x-mark');

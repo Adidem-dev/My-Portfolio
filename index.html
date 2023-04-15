@@ -255,7 +255,7 @@
         </div>
 
         <div class="form">
-          <form action="https://formspree.io/f/mrgvybre" method="POST">
+          <form action="https://formspree.io/f/mrgvybre" method="POST" id="form1" name="fEmail">
             <div class="contact">
               <input
                 type="text"
@@ -285,8 +285,11 @@
                 placeholder="Hey i'd like to connect to..."
                 required
               ></textarea>
+              <!-- <label for="textarea" id="lower" style="color: red;visibility:hidden">Not sent</label> -->
             </div>
-            <button type="submit">Get in touch</button>
+            <button type="submit" id="click">Get in touch</button>
+            <p id="error"></p>
+            
           </form>
         </div>
       </div>

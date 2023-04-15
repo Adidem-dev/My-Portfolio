@@ -5,24 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/51f27b15da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css" />
     <title>Document</title>
   </head>
   <body>
-    <section class="desktop-bg">
+
       <header class="header-nav">
         <nav class="nav-bar">
-          <img src="./assets/Union.svg" alt="hambuger icon" />
+          <img class="hamburger" src="./assets/Union.svg" alt="hambuger icon" />
+          <img src="./assets/close.svg" alt="close-icon" class="x-mark">
         </nav>
-
+        <div class="overlay hidden"></div>
+        
         <nav class="nav-bar_desktop">
-          <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+          <ul class=" nav-bar-mobile ">
+            <li><a href="#recent">Portfolio</a></li>
+            <li><a href="#about-div">About</a></li>
+            <li><a href="#contact-block">Contact</a></li>
+          </ul>    
         </nav>
+        
       </header>
+
+    <section class="desktop-bg"> 
       <section class="headline-container">
         <div class="header-page">
           <h1 class="animate-head">
@@ -70,7 +76,7 @@
       </section>
     </section>
 
-    <section class="main-section">
+    <section id="recent" class="main-section">
       <div class="works-section-title">
         <h2>My Recent Works</h2>
         <img src="./assets/Indicator.svg" alt="" />
@@ -181,7 +187,7 @@
       </div>
     </section>
 
-    <section class="about-section">
+    <section id="about-div" class="about-section">
       <div class="about-me flex">
         <h2>About me</h2>
         <p>
@@ -240,7 +246,7 @@
     </section>
 
     <section class="background">
-      <div class="contact-section">
+      <div id="contact-block" class="contact-section">
         <div class="contact-me">
           <p class="touch">
             I'm always interested in hearing about new projects, so if you'd
@@ -319,5 +325,7 @@
         </div>
       </footer>
     </section>
+    
+    <script src="index.js"></script>
   </body>
 </html>

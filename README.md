@@ -136,12 +136,16 @@ You can deploy this project using:
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Usman Ayoade**
-👤 **Menendwz Nelson**
+
 
 - GitHub: [@githubhandle](https://github.com/Adidem-dev)
 - Twitter: [@twitterhandle](https://twitter.com/usman_ayoade)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/usman-ayoade-30043197/)
 
+👤 **Menendz Nelson**
+
+
+- GitHub: [@githubhandle](https://github.com/MenendezON)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

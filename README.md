@@ -135,7 +135,8 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Usman Ayoade**
+👤 **Menendwz Nelson**
 
 - GitHub: [@githubhandle](https://github.com/Adidem-dev)
 - Twitter: [@twitterhandle](https://twitter.com/usman_ayoade)

@@ -35,11 +35,9 @@ body {
   z-index: 1;
 }
 
-
 .hidden {
   display: none;
 }
-
 
 .nav-bar img {
   height: 20px;
@@ -698,8 +696,6 @@ button[type="submit"] {
     }
   }
 }
-
-
 
 @media screen and (max-width: 767px) {
   .x-mark {

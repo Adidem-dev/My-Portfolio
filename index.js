@@ -35,6 +35,7 @@ if (window.innerWidth < 767) {
 
 const email = document.getElementById('mail');
 const form = document.getElementById('form1');
+
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   if (email.value !== email.value.toLowerCase()) {

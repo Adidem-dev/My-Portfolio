@@ -99,7 +99,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="https://adidem-dev.github.io/My-Portfolio/"></a>
 
-- [[Live Demo Link](https://adidem-dev.github.io/My-Portfolio/)](#)
+https://adidem-dev.github.io/My-Portfolio/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

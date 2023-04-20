@@ -1,5 +1,4 @@
 const button = document.querySelector('.hamburger');
-// const element = document.querySelector('.nav-bar-mobile');
 const close = document.querySelector('.x-mark');
 const menuList = document.querySelector('.nav-bar-mobile');
 const list = document.querySelectorAll('.nav-bar-mobile a');

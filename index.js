@@ -10,7 +10,7 @@ button.addEventListener('click', () => {
   menuList.style.display = 'flex';
   button.style.display = 'none';
   close.style.display = 'block';
-  overlay.classList.remove('hidden');
+  overlay.classList.('hidden');
   body.style.overflow = 'hidden';
 });
 

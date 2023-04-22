@@ -48,12 +48,123 @@ body {
   height: 20px;
 }
 
-/* POPUP-MOBILE */
+/* POPUP-MOBILE START HERE*/
 
-.popup {
-  display: none;
-}
+  .popup {
+    width: 100%;
+    height: 100%;
+    background-color: #c1c7d0;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    backdrop-filter: blur(8px);
+    transition: top 3s ease-in-out;
+  }
 
+  .popup-content {
+    width: 90%;
+    margin: 30px auto;
+    height: auto;
+    background-color: #fff;
+    justify-content: center;
+    top: 60px;
+    padding: 5px 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .close-btn {
+    float: right;
+    font-size: 20px;
+    color: #c1c7d0;
+    cursor: pointer;
+  }
+
+  .pop-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .pop-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .pop-heading h3 {
+    font-family: var(--font-family);
+    color:  #172b4d;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    display: block;
+    text-align: left;
+  }
+
+  .pop-button {
+    display: none;
+  }
+
+   .pop-button-mob {
+    display: flex;
+  }
+
+  .button-info-mob {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    background-color: #36b37e;
+    margin-right: 20px;
+  }
+
+  .button-info img {
+    margin-top: 10px;
+  }
+
+  .pop-skills {
+    display: none;
+  }
+
+  .pop-skills-mob {
+    margin-top: 20px;
+  }
+
+  .pop-skills-mob ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .pop-skills-mob li {
+    padding: 8px 12px;
+    background-color: #ebecf0;
+    border-radius: 4px;
+    color: #344563;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--font-family);
+  }
+
+  .pop-details {
+    text-align: left;
+    line-height: 30px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #344563;
+    margin-right: 20px;
+    margin-top: 30px;
+  }
+
+  /* POP UP MOBILE ENDS HERE */
 .headline-container {
   background-image: url("./assets/header-illsutration-mobile.svg");
   background-repeat: no-repeat;
@@ -711,27 +822,42 @@ button[type="submit"] {
 
   /* MY-SECTION */
 
-    .popup {
-    width: 1440px;
-    height: 1990px;
+  .popup {
+    width: 100%;
+    height: 100%;
     background-color: #c1c7d0;
-    position: absolute;
+    display: none;
+    position: fixed;
+    z-index: 1;
     top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 0;
+    overflow: auto;
+    backdrop-filter: blur(8px);
+    transition: top 3s ease-in-out;
   }
 
   .popup-content {
-    width: 920px;
-    height: 1083px;
+    width: 80%;
+    margin: 30px auto;
+    height: auto;
     background-color: #fff;
+    justify-content: center;
+    top: 60px;
+    padding: 5px 20px;
     border-radius: 8px;
     text-align: center;
   }
 
-  .popup-content img {
-    margin-top: 60px;
+  .close-btn {
+    float: right;
+    font-size: 25px;
+    color: #c1c7d0;
+    cursor: pointer;
+  }
+
+  .pop-img {
+    width: 100%;
+    height: 100%;
   }
 
   .pop-heading {
@@ -755,8 +881,8 @@ button[type="submit"] {
 
    .pop-button {
     display: flex;
-    /* gap: 2px; */
   }
+
   .button-info {
     padding: 15px;
     font-size: 15px;
@@ -770,6 +896,10 @@ button[type="submit"] {
 
   .button-info img {
     margin-top: 0;
+  }
+
+  .pop-button-mob {
+    display: none;
   }
 
   .pop-skills {
@@ -791,7 +921,10 @@ button[type="submit"] {
     font-size: 12px;
     font-weight: 600;
     font-family: var(--font-family);
+  }
 
+  .pop-skills-mob {
+    display: none;
   }
 
   .pop-details {

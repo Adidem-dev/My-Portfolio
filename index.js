@@ -35,18 +35,18 @@ if (window.innerWidth < 767) {
 
 /* Form Validation Section */
 
-const email = document.getElementById('mail');
-const form = document.getElementById('form1');
+// const email = document.getElementById('mail');
+// const form = document.getElementById('form1');
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  if (email.value !== email.value.toLowerCase()) {
-    document.getElementById('error').innerText = 'Error, Email must be lowercase. Form is not sent';
-  } else {
-    document.getElementById('error').innerText = '';
-    form.submit();
-  }
-});
+// form.addEventListener('submit', (event) => {
+//   event.preventDefault();
+//   if (email.value !== email.value.toLowerCase()) {
+//     document.getElementById('error').innerText = 'Error, Email must be lowercase. Form is not sent';
+//   } else {
+//     document.getElementById('error').innerText = '';
+//     form.submit();
+//   }
+// });
 
 
 // POPUP-WINDOW SECTION
@@ -115,7 +115,7 @@ const projectData = [
   {
     image: './assets/card_bg.png',
     imgPopDes: './assets/Snapshoot-Portfolio1.svg',
-    imgPopMob: './assets/Snapshoot-Portfolio2.svg',
+    imgPopMob: './assets/Snapshoot-Portfolio.svg',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -131,10 +131,10 @@ const projectPage = document.querySelector('#page');
 for (let i = 0; i < projectData.length; i += 1) {
   projectPage.innerHTML += `
   <div class="card flex column">
-  <img src="${projectData[i].image}" alt="image" />
+  <img src="${projectData[i].image}" alt="card-image1" />
   <div class="card-details flex column">
-    <h2>${projectData[i].head}</h2>
-    <h2>${projectData[i].head2}</h2>
+    <h3>${projectData[i].head}</h3>
+    <h3>${projectData[i].head2}</h3>
     <ul class="list flex">
       <li>${projectData[i].tags[0]}</li>
       <li>${projectData[i].tags[1]}</li>
@@ -155,39 +155,60 @@ for (let j = 0; j < projectData.length; j += 1) {
       // console.log("Button is clicked");
       model.style.display = 'block';
       model.innerHTML = `
-      <div class="pop-up">
-      <span class="close-btn">X</span>
-      <img src= "${projectData[j].imgPopMob}" alt="popup-image" class="pop-mobile-image">
-      <img class="pop-image" src="${projectData[j].imgPopDes}" alt="card-image1" />
-      <div class="pop-details">
-        <h3>${projectData[j].headPop}</h3>
-        <div class="pop-button">
-          <button type="button">See live <img src="Icons/Icon.svg" alt=""></button>
-          <button type="button"> <span>See source</span> <img src="Icons/Vector.svg" alt=""></button>
+        <div class="popup-content">
+           <div class="close-btn">X</div>
+          <img src="${projectData[j].imgPopDes}" alt="desktop image" class="pop-img">
+          <div class="pop-heading">
+            <h3>${projectData[j].headPop}</h3>
+            <div class="pop-button">
+              <button type="button" class="button-info">
+                See live
+                <img src="./assets/Icon-Export.svg" alt="export-image">
+              </button>
+              <button type="button"  class="button-info">
+                See source
+                <img src="./assets/Icon-GitHub.svg" alt="source-image">
+              </button>
+            </div>
+          </div>
+          <div class="pop-skills">
+            <ul>
+              <li>${projectData[j].tags2[0]}</li>
+              <li>${projectData[j].tags2[1]}</li>
+              <li>${projectData[j].tags2[2]}/li>
+              <li>${projectData[j].tags2[3]}</li>
+              <li>${projectData[j].tags2[4]}</li>
+              <li>${projectData[j].tags2[5]}</li>
+            </ul>
+          </div>
+
+          <div class="pop-skills-mob">
+            <ul>
+              <li>${projectData[j].tags2[0]}</li>
+              <li>${projectData[j].tags2[1]}</li>
+              <li>${projectData[j].tags2[2]}</li>
+            </ul>
+          </div>
+          <div class="pop-details">
+            <p>
+              ${projectData[j].text}
+            </p>
+          </div>
+          <div class="pop-button-mob">
+              <button type="button" class="button-info-mob">
+                See live
+                <img src="./assets/Icon-Export.svg" alt="export-image">
+              </button>
+              <button type="button"  class="button-info-mob">
+                See source
+                <img src="./assets/Icon-GitHub.svg" alt="source-image">
+              </button>
+            </div>
         </div>
-      </div>
-      <ul class="pop-list">
-        <li>${projectData[j].tags2[0]}</li>
-        <li>${projectData[j].tags2[1]}</li>
-        <li>${projectData[j].tags2[2]}</li>
-        <li>${projectData[j].tags2[3]}</li>
-        <li>${projectData[j].tags2[4]}</li>
-      </ul>
-      <ul class="pop-list-mobile">
-        <li>${projectData[j].tagMob[0]}</li>
-        <li>${projectData[j].tagMob[1]}</li>
-        <li>${projectData[j].tagMob[2]}</li>
-      </ul>
-      <p class="pop-desc">${projectData[j].text}</p>
-      <div class="pop-button-mobile">
-        <button type="button"> <span>See live </span> <img src="Icons/Icon.svg" alt=""></button>
-        <button type="button"> <span>See source</span> <img src="Icons/Vector.svg" alt=""></button>
-      </div>
-    </div>
       `;
       const close = document.querySelector('.close-btn');
       close.addEventListener('click', () => {
-        const modal = document.querySelector('.modal');
+        const modal = document.querySelector('.popup');
         modal.style.display = 'none';
       });
     });

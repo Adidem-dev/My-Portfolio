@@ -1,3 +1,6 @@
+
+ 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -77,114 +80,16 @@
     </section>
 
     <section id="recent" class="main-section">
+
+        <!-- POPUP-WINDOW DESKTOP SECTION --> 
       <div class="works-section-title">
         <h2>My Recent Works</h2>
         <img src="./assets/Indicator.svg" alt="" />
       </div>
 
-      <div class="works-grid-container">
-        <div class="card flex column">
-          <img src="./assets/card_bg.png" alt="image" />
-          <div class="card-details flex column">
-            <h2>
-              Multi-Post-Stories <br />
-              Gain &#43; Glory
-            </h2>
-            <ul class="list flex">
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button type="button">See project</button>
-          </div>
-        </div>
-
-        <div class="card flex column">
-          <img src="./assets/card_bg.png" alt="image" />
-          <div class="card-details flex column">
-            <h2>
-              Multi-Post-Stories <br />
-              Gain &#43; Glory
-            </h2>
-            <ul class="list flex">
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button type="button">See project</button>
-          </div>
-        </div>
-
-        <div class="card flex column">
-          <img src="./assets/card_bg.png" alt="image" />
-          <div class="card-details flex column">
-            <h2>
-              Multi-Post-Stories <br />
-              Gain &#43; Glory
-            </h2>
-            <ul class="list flex">
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button type="button">See project</button>
-          </div>
-        </div>
-
-        <div class="card flex column">
-          <img src="./assets/card_bg.png" alt="img" />
-          <div class="card-details flex column">
-            <h2>
-              Multi-Post-Stories <br />
-              Gain &#43; Glory
-            </h2>
-            <ul class="list flex">
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button type="button">See project</button>
-          </div>
-        </div>
-
-        <div class="card flex column">
-          <img src="./assets/card_bg.png" alt="img" />
-          <div class="card-details flex column">
-            <h2>
-              Multi-Post-Stories <br />
-              Gain &#43; Glory
-            </h2>
-            <ul class="list flex">
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button type="button">See project</button>
-          </div>
-        </div>
-
-        <div class="card flex column">
-          <img src="./assets/card_bg.png" alt="img" />
-          <div class="card-details flex column">
-            <h2>
-              Multi-Post-Stories <br />
-              Gain &#43; Glory
-            </h2>
-            <ul class="list flex">
-              <li>Ruby on Rails</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-            </ul>
-            <button type="button">See project</button>
-          </div>
-        </div>
+      <div class="works-grid-container" id="page">
       </div>
+
     </section>
 
     <section id="about-div" class="about-section">
@@ -255,7 +160,7 @@
         </div>
 
         <div class="form">
-          <form action="https://formspree.io/f/mrgvybre" method="POST" id="form1" name="fEmail">
+          <form action="https://formspree.io/f/mrgvybre" method="POST">
             <div class="contact">
               <input
                 type="text"
@@ -285,11 +190,8 @@
                 placeholder="Hey i'd like to connect to..."
                 required
               ></textarea>
-              <!-- <label for="textarea" id="lower" style="color: red;visibility:hidden">Not sent</label> -->
             </div>
-            <button type="submit" id="click">Get in touch</button>
-            <p id="error"></p>
-            
+            <button type="submit">Get in touch</button>
           </form>
         </div>
       </div>
@@ -328,6 +230,11 @@
         </div>
       </footer>
     </section>
+
+    <!-- POP UP MODAL DETAILS -->
+
+    <div class="popup"  id="modal1">
+      </div>
     
     <script src="index.js"></script>
   </body>

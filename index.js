@@ -41,13 +41,12 @@ if (window.innerWidth < 767) {
 // form.addEventListener('submit', (event) => {
 //   event.preventDefault();
 //   if (email.value !== email.value.toLowerCase()) {
-//     document.getElementById('error').innerText = 'Error, Email must be lowercase. Form is not sent';
+//     document.getElementById('error').innerText = 'Error, Email must be lowercase.';
 //   } else {
 //     document.getElementById('error').innerText = '';
 //     form.submit();
 //   }
 // });
-
 
 // POPUP-WINDOW SECTION
 

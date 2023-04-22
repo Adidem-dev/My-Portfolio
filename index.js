@@ -53,9 +53,9 @@ form.addEventListener('submit', (event) => {
 
 const projectData = [
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    image: './assets/card_bg.png',
+    imgPopDes: './assets/Snapshoot-Portfolio1.svg',
+    imgPopMob: './assets/Snapshoot-Portfolio2.svg',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -65,9 +65,9 @@ const projectData = [
     tagMob: ['Ruby on Rails', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    image: './assets/card_bg.png',
+    imgPopDes: './assets/Snapshoot-Portfolio1.svg',
+    imgPopMob: './assets/Snapshoot-Portfolio2.svg',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -77,9 +77,9 @@ const projectData = [
     tagMob: ['Ruby on Rails', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    image: './assets/card_bg.png',
+    imgPopDes: './assets/Snapshoot-Portfolio1.svg',
+    imgPopMob: './assets/Snapshoot-Portfolio2.svg',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -89,9 +89,9 @@ const projectData = [
     tagMob: ['Ruby on Rails', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    image: './assets/card_bg.png',
+    imgPopDes: './assets/Snapshoot-Portfolio1.svg',
+    imgPopMob: './assets/Snapshoot-Portfolio2.svg',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -101,9 +101,9 @@ const projectData = [
     tagMob: ['Ruby on Rails', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    image: './assets/card_bg.png',
+    imgPopDes: './assets/Snapshoot-Portfolio1.svg',
+    imgPopMob: './assets/Snapshoot-Portfolio2.svg',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -113,9 +113,9 @@ const projectData = [
     tagMob: ['Ruby on Rails', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    image: './assets/card_bg.png',
+    imgPopDes: './assets/Snapshoot-Portfolio1.svg',
+    imgPopMob: './assets/Snapshoot-Portfolio2.svg',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -131,10 +131,10 @@ const projectPage = document.querySelector('#page');
 for (let i = 0; i < projectData.length; i += 1) {
   projectPage.innerHTML += `
   <div class="card flex column">
-  <img src="${projectData[i].image}" alt="card-image1" />
+  <img src="${projectData[i].image}" alt="image" />
   <div class="card-details flex column">
-    <h3>${projectData[i].head}</h3>
-    <h3>${projectData[i].head2}</h3>
+    <h2>${projectData[i].head}</h2>
+    <h2>${projectData[i].head2}</h2>
     <ul class="list flex">
       <li>${projectData[i].tags[0]}</li>
       <li>${projectData[i].tags[1]}</li>
